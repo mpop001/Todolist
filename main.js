@@ -1,7 +1,8 @@
     
 const localList= localStorage.getItem('Td');
 const localuser = localStorage.getItem('username');
-const localphoto = localStorage.getItem('photo')
+const localphoto = localStorage.getItem('photo');
+const localcolor = localStorage.getItem('color');
 var mydate = document.querySelector('header .Date'),
     myside = document.querySelector('header i'),
     cleanAll = document.getElementById('clean'),
@@ -34,6 +35,11 @@ var mydate = document.querySelector('header .Date'),
         document.querySelector('.into-page').style.display = "none"
         document.querySelector('.name-profile').textContent = localuser;
         document.getElementById('photo').src=localphoto;
+        document.querySelector('header').style.backgroundColor=localcolor;
+        document.querySelector('.plus i').style.color=localcolor;
+        document.querySelector('.right').style.backgroundColor=localcolor;
+        document.querySelector('.left').style.backgroundColor=localcolor;
+        
     }
     
   
@@ -41,16 +47,25 @@ var mydate = document.querySelector('header .Date'),
         male.classList.remove('done')
         female.classList.toggle('done')
         document.getElementById('photo').src="img/profile.png"
-        localStorage.setItem('photo',"img/profile.png")
+        localStorage.setItem('photo',"img/profile.png");
+        document.querySelector('header').style.backgroundColor="#ec407a"
+        document.querySelector('.plus i').style.color="#ec407a"
+        document.querySelector('.right').style.backgroundColor="#ec407a"
+        document.querySelector('.left').style.backgroundColor="#ec407a"
+        localStorage.setItem('color',"#ec407a");
       
-        
     }
     male.onclick = function(){
         female.classList.remove('done')
         male.classList.toggle('done')
         document.getElementById('photo').src="img/profile (1).png"
         localStorage.setItem('photo',"img/profile (1).png")
-
+        document.querySelector('header').style.backgroundColor="#0288d1"
+        document.querySelector('.plus i').style.color="#0288d1"
+        document.querySelector('.right').style.backgroundColor="#0288d1"
+        document.querySelector('.left').style.backgroundColor="#0288d1"
+        localStorage.setItem('color',"#0288d1");
+        
     }
     
     login.onclick = function(){
