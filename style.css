@@ -170,7 +170,7 @@ outline: none;
     left: calc(50% - 220px);
     height: 589px;
     width:12%;
-    background-color: #e3f2fd;
+    background-color: #ffffff;
     z-index: 2;
     transition: transform 0.3s;
     transform: translate(-250px);
@@ -238,7 +238,7 @@ outline: none;
     background-color: white;
     padding: 15px 0;
     font-weight: bold;
-    color:#1976d2;
+    color:#424242;
    
 }.menu .menu-content .item span:first-child{
     font-size: 50px;
@@ -252,15 +252,7 @@ outline: none;
     border-right: 5px solid white;
 
 }
-.menu .line{
-    position: absolute;
-    bottom: 90px;
-    width: 80%;
-    margin: 10px 25px;
-    height: 2px;
-    border-bottom: 6px solid #ddd;
 
-}
 
    
 .mask{
@@ -353,7 +345,7 @@ outline: none;
     color:#0288d1;
 }
 .into-page .your-info .female i{
-    color:palevioletred;
+    color:#ec407a;
 }
 .into-page .your-info .done{
     border:3px solid #0288d1;
@@ -374,9 +366,7 @@ outline: none;
         width: 80%;
         left: -50px;
     }
-    .line{
-        display: none;
-    }
+    
     .into-page{
         width: 100%;
         left: 0;
